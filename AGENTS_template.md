@@ -69,9 +69,8 @@ Before changing code:
 
 1. Read the relevant project documentation.
 2. Understand the existing structure.
-3. Check `/DOCS/MEMORY.md` for prior decisions.
-4. Check `/DOCS/ERRORS.md` for previous failed approaches related to the current task.
-5. Inspect the relevant implementation before proposing changes.
+3. Check `/DOCS/MEMORY.md` and `/DOCS/ERRORS.md` for prior decisions and failed approaches that affect this task.
+4. Inspect the relevant implementation before proposing changes.
 
 If the task changes architecture, project behavior, a significant workflow, or an important implementation decision, update the appropriate documentation after the work is complete.
 
@@ -125,39 +124,23 @@ When looking for project documentation or reference material, check `/DOCS` befo
 
 ### Documentation Rules
 
-Update documentation only when the completed task makes existing documentation inaccurate or incomplete.
+Three durable context files live in `/DOCS` and each has a separate job:
 
-Keep `/DOCS/OVERVIEW.md` accurate as the living technical reference.
+- `OVERVIEW.md`: how the project works right now
+- `MEMORY.md`: significant decisions, reasoning, and rejected alternatives
+- `ERRORS.md`: failed approaches and difficult bugs worth remembering
 
-Maintain `/DOCS/MEMORY.md`. After a significant project decision, add an entry containing:
+Read them before changing existing behavior, before proposing an alternative to something already built, and before debugging a problem that may have been hit before.
 
-- What was decided
-- Why
-- What was rejected and why
+Write to them after the work is done and verified, when a real decision was made or an approach failed in a way that would cost time again. Do not log routine implementation, ordinary fixed bugs, or feature announcements.
 
-Read `/DOCS/MEMORY.md` at the start of a session when prior project decisions may affect the task.
+Keep `OVERVIEW.md` accurate as the living technical reference. Fix the sentence that became wrong instead of appending a correction after it.
 
-Maintain `/DOCS/ERRORS.md`. When an approach takes multiple attempts to solve, has a non-obvious root cause, or is likely to waste time again, record:
+Use the `project-context` skill for entry formats, the bar for what qualifies, and worked examples.
 
-- What did not work
-- What worked instead
-- Note for next time
-
-Check `/DOCS/ERRORS.md` before suggesting approaches to similar problems.
+If the repository uses session summaries, add one to `/DOCS/MEMORY.md` when the owner says the session is ending.
 
 If the project maintains a roadmap, update `/DOCS/ROADMAP.md` only when the direction of the project or planned work actually changes.
-
-### Session Summaries
-
-If the owner explicitly says the session is ending, optionally add a short summary to `/DOCS/MEMORY.md`:
-
-- Worked on
-- Completed
-- In progress
-- Decisions made
-- Next session priorities
-
-Only do this if the repository uses session summaries.
 
 ## Release Workflow
 
