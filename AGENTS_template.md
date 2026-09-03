@@ -78,7 +78,11 @@ If something is unclear and the ambiguity could materially change the implementa
 
 ## Writing Style
 
-When writing on behalf of the project owner, match the voice defined here instead of defaulting to generic AI writing.
+Use the `clear-writing` skill for documentation, guides, release notes, error messages, commit bodies, agent instructions, and any prose written on behalf of the project owner. It covers both halves of the job: writing that a tired reader cannot misread, and prose that does not read as machine-generated.
+
+The skill classifies each passage first, because the rules differ. Instructional text such as setup steps and error messages gets hard sentence limits and one word per concept. Voiced prose such as a README opening or a release announcement gets varied rhythm and a real voice. A README holds both.
+
+Beyond the skill, match the voice defined here instead of defaulting to generic AI writing.
 
 Customize this section with the owner's preferences.
 
@@ -136,7 +140,7 @@ Write to them after the work is done and verified, when a real decision was made
 
 Keep `OVERVIEW.md` accurate as the living technical reference. Fix the sentence that became wrong instead of appending a correction after it.
 
-Use the `project-context` skill for entry formats, the bar for what qualifies, and worked examples.
+Use the `project-context` skill for entry formats, the bar for what qualifies, and worked examples. Use the `clear-writing` skill for the prose itself.
 
 If the repository uses session summaries, add one to `/DOCS/MEMORY.md` when the owner says the session is ending.
 
