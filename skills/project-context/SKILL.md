@@ -10,7 +10,7 @@ description: |
   Also use when the user says "log this decision", "add this to memory",
   "write this up in ERRORS", "update the overview", "what did we decide about
   X", "did we try this before", or asks to set these files up in a new project.
-license: MIT
+license: Apache-2.0
 compatibility: claude-code cursor codex gemini-cli opencode
 ---
 

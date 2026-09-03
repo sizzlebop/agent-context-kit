@@ -11,7 +11,7 @@ description: |
   "make this sound less like AI", "de-slop", "clean up this writing", "audit
   this for AI tells", "STE", "Simplified Technical English", "make this
   readable", or "write for non-native readers".
-license: MIT
+license: Apache-2.0
 compatibility: claude-code cursor codex gemini-cli opencode
 metadata:
   merged_from: simple-english 1.0.0, avoid-ai-writing 3.15.0
